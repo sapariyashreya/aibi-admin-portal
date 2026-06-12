@@ -1,5 +1,6 @@
 import pool from "@/lib/db";
 
+console.log("ENV CHECK:", process.env.DATABASE_URL);
 export async function GET() {
   try {
     const result = await pool.query(
